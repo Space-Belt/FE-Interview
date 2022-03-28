@@ -1,5 +1,7 @@
 ## variable screen control
 
+![css Variable](https://user-images.githubusercontent.com/82592845/160286357-1cbd7829-40e4-4acc-907c-3b281abfedf9.gif)
+
 ```html
 <div class="controls">
   <label for="spacing">Spacing:</label>
