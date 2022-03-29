@@ -83,9 +83,13 @@ function setDate() {
 }
 ```
 
-2 [https://curryyou.tistory.com/185](https://curryyou.tistory.com/185) 백틱 (``` ) 사용법
+[https://curryyou.tistory.com/185](https://curryyou.tistory.com/185) 백틱 (``` ) 사용법
 
-3 백틱으로 표현식을 삽입하여 정해준다.
+백틱으로 표현식을 삽입하여 정해준다.
+
+```
+setInterval(setDate, 1000);
+```
 
 1. setInterval 사용 해서 실행
 
