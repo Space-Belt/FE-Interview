@@ -45,7 +45,8 @@ this.classList.remove('trigger-enter', 'trigger-enter-active'); }
 ```
 
 - 여기 까지 하면 마우스 올렸을때 li 아이템들이 보인다.
-  ![스크린샷 2021-09-24 오후 10.45.12.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/df923172-3287-49b5-b72f-6a3cf0b32c9e/스크린샷_2021-09-24_오후_10.45.12.png)
+
+<img alt="image" src="https://user-images.githubusercontent.com/82592845/162675134-7192047c-cfbc-438e-b707-d8c0a1186393.png">
 
 ## 5. background가 나올수 있게 하는 과정의 시작
 
