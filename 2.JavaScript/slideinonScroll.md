@@ -1,10 +1,10 @@
-> 목표
+> <h3>목표</h3>
 
-> Scroll 되면서 slidein 되는 사진들을 만들어보자!
+> <h3>Scroll 되면서 slidein 되는 사진들을 만들어보자!</h3>
 
 ## 일단 슬라이드는 css로 구성되어있다.
 
-```html
+```jsx
 slide-in { opacity: 0; transition: all 0.5s; } .align-left.slide-in { transform:
 translateX(-30%) scale(0.95); } .align-right.slide-in { transform:
 translateX(30%) scale(0.95); } .slide-in.active { opacity: 1; transform:
@@ -22,7 +22,7 @@ slide-in 가 active되면서 opacity 와 translateX(위치), scale(크기)가 �
 
 ## 2. scroll 이벤트는 너무 많이 일어나서 성능 문제를 일으킬수 있기 때문에 debounce함수를 만들어서 controll 해준다.
 
-```html
+```jsx
 function debounce(func, wait = 20, immediate = true) { var timeout; return
 function () { var context = this, args = arguments; var later = function () {
 timeout = null; if (!immediate) func.apply(context, args); }; var callNow =
@@ -34,7 +34,7 @@ if (callNow) func.apply(context, args); }; }
 
 ## 3. scroll 되는정도를 체크하고 조건이 맞으면 active시켜서 슬라이드 기능 실행시킨다.
 
-```html
+```jsx
 function checkSlide() { sliderImages.forEach(sliderImage => { // 이미지 반을
 넘었을때 // (window.scrollY + window.innerHeight) 내가 내린 스크롤 값 + 화면에
 보여지는 높이 const slideInAt = (window.scrollY + window.innerHeight) -
