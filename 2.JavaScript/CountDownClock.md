@@ -47,8 +47,7 @@ setInterval(() => {
 }, 1000);
 ```
 
-- if(secondsLeft <= 0) { return; } 을하게 되면 실행은 하나 우리에게 보이는것이 없다.
-  그러므로 밑의 방식을 시도한다.
+- if(secondsLeft <= 0) { return; } 을하게 되면 실행되지만 보이는것이 없으니 아래와 같이 count down 변수에 넣어서 콘솔을 찍어준다.
 
 ```jsx
 let countdown;  변수 선언

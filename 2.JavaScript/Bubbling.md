@@ -6,15 +6,19 @@
 
 ## 1. 모든 div를 가져온다.
 
-```html
-const divs = document.querySelectorAll('div');
+```jsx
+const divs = document.querySelectorAll("div");
 ```
 
 ## 2. div에 대한 리스너를 개별적으로 설정한다.
 
-```html
-divs.forEach(div => div.addEventListener('click', logText, { capture: true,
-once: true })); function logText(e) { console.log(this.className); }
+```jsx
+divs.forEach((div) =>
+  div.addEventListener("click", logText, { capture: true, once: true })
+);
+function logText(e) {
+  console.log(this.className);
+}
 ```
 
 - capture : true ⇒ 자식요소를 누르면 one two three 로 최상위 부터 클릭된 자식 요소 순서
@@ -25,7 +29,7 @@ once: true })); function logText(e) { console.log(this.className); }
 
 ## 3. 이 현상을 버블링 현상이라 한다 ! 버블링이란???
 
-```html
+```jsx
 <div class="one">
   <div class="two">
     <div class="three"></div>
@@ -38,7 +42,7 @@ once: true })); function logText(e) { console.log(this.className); }
 
 ## 4. 이 버블링 현상을 멈출수 있다 ! 그것은 바로 e.stopPropagation(); 다!
 
-```html
+```jsx
 function logText(e) { console.log(this.classList.value); e.stopPropagation(); //
 타고올라가는 bubbling 멈춰! }
 ```
