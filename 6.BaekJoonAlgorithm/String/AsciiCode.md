@@ -77,9 +77,10 @@ rl.on('line', function(line){
 
 1. fs로 쉽게 풀이
 
-```html
-const input = require('fs').readFileSync('/dev/stdin').toString(); const a =
-input; console.log(a.charCodeAt());
+```jsx
+const input = require("fs").readFileSync("/dev/stdin").toString();
+const a = input;
+console.log(a.charCodeAt());
 ```
 
 # 알아 놓기!!
@@ -92,15 +93,19 @@ input; console.log(a.charCodeAt());
 
 - 예제 1 소스
 
-var val = "charCodeAt";
+```jsx
+var val = "charCodeAt";
 
-document.write("val.charCodeAt(4) : " + val.charCodeAt(4) + "<br>");
+document.write("val.charCodeAt(4) : " + val.charCodeAt(4) + "<br>");
+```
 
 결과
 
 ---
 
+```jsx
 val.charCodeAt(4) : 67
+```
 
 ---
 
@@ -114,30 +119,34 @@ String.fromCharCode([아스키코드값]);
 
 - 예제 2 소스
 
-var val = 111;
+```jsx
+var val = 111;
 
-document.write("String.fromCharCode(val) : " + String.fromCharCode(val) + "<br>");
+document.write(
+  "String.fromCharCode(val) : " + String.fromCharCode(val) + "<br>"
+);
+```
 
 결과
 
 ---
 
-String.fromCharCode(val) : o
+`String.fromCharCode(val) : o`
 
 ---
 
 - 예제 3
 
-String.fromCharCode를 이용하여 문자열 "ASCII" 를 출력하시오.
+`String.fromCharCode`를 이용하여 문자열 "ASCII" 를 출력하시오.
 
 - 예제 3 소스
 
-document.write("String.fromCharCode(65, 83, 67, 73, 73) : " + String.fromCharCode(65, 83, 67, 73, 73) + "<br>");
+`document.write("String.fromCharCode(65, 83, 67, 73, 73) : " + String.fromCharCode(65, 83, 67, 73, 73) + "<br>");`
 
 결과
 
 ---
 
-String.fromCharCode(65, 83, 67, 73, 73) : ASCII
+`String.fromCharCode(65, 83, 67, 73, 73) : ASCII`
 
 ---
