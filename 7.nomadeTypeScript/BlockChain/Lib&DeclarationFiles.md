@@ -61,6 +61,7 @@ interface Config {
 
 declare module "myPackage" {
   function init(config: Config): boolean;
+  function exit(conde: number): number;
 }
 ```
 
@@ -68,7 +69,13 @@ declare module "myPackage" {
 - .d.ts 파일은 파일 정의가 되어 있는 곳이다. 타입스크립트가 localStorage, window 등의 모양을 아는 이유가 정의가 되어있기 때문이다.
 
 ```jsx
-import { init } from "myPackage";
+import { init, exit } from "myPackage";
+
+init({
+  url: "true",
+});
+
+exit(1);
 ```
 
 - index.ts
