@@ -290,7 +290,7 @@ var outside = function () {
 outside();
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/efd153ac-b06f-43b8-bc18-8bb4da40fe4b/Untitled.png)
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/82592845/183235679-6063ad63-12ec-4e4a-a2ee-3725d51f561c.png">
 
 - 위 코드에서 LexicalEnvironment를 참조한다는것을 알 수 있다.
 - 또한 클로저 함수임을 확인 할 수 있다.
@@ -305,3 +305,8 @@ outside();
 ## ThisBinding
 
 - This는 따로 알아보자!
+
+자료 출처
+
+- [링크](https://junilhwang.github.io/TIL/Javascript/Domain/Execution-Context/#_3-environmentrecord%E1%84%8B%E1%85%AA-hoisting-%E1%84%92%E1%85%A9%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B5%E1%86%BC)
+- [링크](https://velog.io/@ggong/자바스크립트의-실행-컨텍스트-execution-context)
